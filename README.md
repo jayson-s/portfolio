@@ -20,8 +20,6 @@ This is my personal portfolio website built with **Next.js 15**, **React 19**, *
 ├── 📁 app             # Next.js App Router files
 ├── 📁 components      # Reusable UI components
 ├── 📁 public          # Static assets like images & icons
-├── 📁 styles          # Global styles (Tailwind)
 ├── 📄 next.config.js  # Next.js configuration
-├── 📄 tailwind.config.ts  # Tailwind configuration
 └── 📄 README.md       # This file
 ```
