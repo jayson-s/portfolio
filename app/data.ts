@@ -151,4 +151,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 type Email = `${string}@${string}.${string}`;
 
-export const EMAIL: Email = 'jayson.sandhu@yahoo.com';
+export const EMAIL: Email = 'jayson@jaysonsandhu.com';
