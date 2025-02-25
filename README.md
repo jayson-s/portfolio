@@ -4,7 +4,7 @@ This is my personal portfolio website built with **Next.js 15**, **React 19**, *
 
 ## 🚀 Live Demo
 
-[https://jayson-s.github.io](https://jayson-s.github.io)
+[https://www.jaysonsandhu.com](https://www.jaysonsandhu.com)
 
 ## ✨ Features
 
