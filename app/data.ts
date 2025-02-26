@@ -101,14 +101,14 @@ export const PROJECTS: Project[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Apple',
-    title: 'Technical Expert',
+    title: 'Support Engineer',
     start: 'Aug 2021',
     end: 'Present',
     id: 'work1',
   },
   {
     company: 'IBM',
-    title: 'Software Developer',
+    title: 'Software Engineer',
     start: 'May 2019',
     end: 'Dec 2019',
     id: 'work2',
