@@ -116,16 +116,22 @@ export const PROJECTS: Project[] = [
     id: 'project2',
   },
   {
-    name: 'Banking System',
-    description: 'A scalable C++ banking system designed for secure account management, transactions, and financial data integrity.',
-    link: 'https://github.com/jayson-s/Banking-System',
-    id: 'project3',
-  },
-  {
     name: 'LifeBalance+',
     description: 'A cross-platform wellness app built with Flutter, offering task management, habit tracking, and fitness analytics.',
     link: 'https://github.com/jayson-s/LifeBalancePlus',
+    id: 'project3',
+  },
+  {
+    name: 'Banking System',
+    description: 'A scalable C++ banking system designed for secure account management, transactions, and financial data integrity.',
+    link: 'https://github.com/jayson-s/Banking-System',
     id: 'project4',
+  },
+  {
+    name: 'Real Estate Prediction Model',
+    description: 'A scalable housing data system designed for robust EDA, efficient feature engineering, and accurate price modeling.',
+    link: 'https://github.com/jayson-s/RealEstatePrediction',
+    id: 'project5',
   },
 ]
 
