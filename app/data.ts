@@ -1,3 +1,8 @@
+type SkillCategory = {
+  category: string
+  skills: string[]
+}
+
 type Project = {
   name: string
   description: string
@@ -20,14 +25,16 @@ type Education = {
   id: string
 }
 
+type Certification = {
+  company: string
+  name: string
+  date: string
+  id: string
+}
+
 type SocialLink = {
   label: string
   link: string
-}
-
-type SkillCategory = {
-  category: string
-  skills: string[]
 }
 
 export const SKILLS: SkillCategory[] = [
@@ -142,6 +149,15 @@ export const EDUCATION_: Education[] = [
     degree: 'Bachelor of Science (Honours) - Computer Science',
     grad: '2024',
     id: 'edu1',
+  },
+]
+
+export const CERTIFICATE: Certification[] = [
+  {
+    company: 'Amazon Web Services',
+    name: 'AWS Cloud Solutions Architect - Associate',
+    date: 'Feb 2025',
+    id: 'cert1',
   },
 ]
 
