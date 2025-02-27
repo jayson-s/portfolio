@@ -7,7 +7,9 @@ import { ThemeProvider } from 'next-themes'
 
 export const viewport: Viewport = {
   width: 'device-width',
-  initialScale: 1,
+  initialScale: 0.75, // Scale down the website on mobile
+  minimumScale: 0.50, // Prevent zooming out beyond 50%
+  maximumScale: 1.50, // Allow zooming in to 150%
   themeColor: '#ffffff',
 }
 
