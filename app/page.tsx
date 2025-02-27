@@ -79,12 +79,21 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Hello, I’m a software engineer with 5+ years of experience crafting innovative, user-focused solutions.
-            Skilled in Java, Python, and C++, I’ve tackled complex challenges—from AI-powered drone systems to scalable cloud-native applications—working with industry leaders like Apple and IBM to build efficient, high-performance software.
-            <br /><br />
-            Beyond tech, I mentor junior cricket athletes, drawing on 18 years of playing and coaching to foster teamwork, strategy, and discipline.
-            Passionate about technology’s transformative power, I stay at the forefront of AI and software innovation, building solutions that make an impact.
+          <p className="text-zinc-800 dark:text-zinc-400">
+          I build solutions that make a difference. As a software engineer, I specialize in designing scalable, high-performance applications that solve real-world challenges. 
+          With expertise in Java, Python, and C++, I’ve worked on everything from AI-powered automation to cloud-native systems, always striving to create software that is both efficient and impactful.
+          <br></br>
+          <br></br>
+          My journey has taken me through industry-leading companies like Apple and IBM, where I’ve worked on projects ranging from AI-powered drone systems to cloud-native enterprise applications. 
+          Each experience has reinforced my passion for engineering solutions that are not only efficient but also meaningful.
+          <br></br>
+          <br></br>
+          Beyond the world of software, I’ve spent 18 years immersed in cricket, both as a player and coach. 
+          Teaching the sport has shaped my leadership style—emphasizing strategy, discipline, and teamwork—principles I carry into my work as an engineer.
+          <br></br>
+          <br></br>
+          At my core, I’m passionate about continuous learning, innovation, and using technology to solve real-world problems. 
+          Whether optimizing complex systems or mentoring the next generation of engineers, I’m always striving to build, improve, and inspire.
           </p>
         </div>
       </motion.section>
@@ -96,14 +105,14 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">Skills</h3>
         {SKILLS.map((skillCategory) => (
           <div key={skillCategory.category} className="mb-6">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-600 dark:text-zinc-400">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-800 dark:text-zinc-300">
               {skillCategory.category}
             </h3>
             <div className="mt-2 flex flex-wrap gap-2">
               {skillCategory.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-4.5 py-2 text-sm font-medium bg-zinc-100 text-zinc-800 rounded-lg dark:bg-zinc-800 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700 transition-all duration-200 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+                  className="px-4 py-1.5 rounded-lg text-sm font-medium bg-white text-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-800 transition-all duration-200 hover:bg-zinc-200 dark:hover:bg-zinc-800"
                 >
                   {skill}
                 </span>
@@ -123,14 +132,14 @@ export default function Personal() {
             <div key={project.name} className="space-y-2">
               <div className="px-1">
                 <a
-                  className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+                  className="font-base group relative inline-block font-[450] text-zinc-800 dark:text-zinc-50"
                   href={project.link}
                   target="_blank"
                 >
                   {project.name}
                   <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
                 </a>
-                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                <p className="text-base text-zinc-500 dark:text-zinc-400">
                   {project.description}
                 </p>
               </div>
@@ -166,7 +175,7 @@ export default function Personal() {
                       {job.company}
                     </p>
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <p className="text-zinc-500 dark:text-zinc-400">
                     {job.start} - {job.end}
                   </p>
                 </div>
@@ -201,7 +210,7 @@ export default function Personal() {
                       {edu.institution}
                     </p>
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <p className="text-zinc-500 dark:text-zinc-400">
                     Class of {edu.grad}
                   </p>
                 </div>
@@ -236,7 +245,7 @@ export default function Personal() {
                       {cert.company}
                     </p>
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <p className="text-zinc-500 dark:text-zinc-400">
                     Issued {cert.date}
                   </p>
                 </div>
@@ -251,7 +260,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
+        <p className="mb-5 text-zinc-500 dark:text-zinc-400">
           Feel free to contact me at{' '}
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
             {EMAIL}
