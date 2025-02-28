@@ -40,7 +40,7 @@ type SocialLink = {
 export const SKILLS: SkillCategory[] = [
   {
     category: 'Languages',
-    skills: ['Java', 'C++', 'Python', 'Typescript', 'JavaScript', 'HTML5', 'CSS3']
+    skills: ['Java', 'C++', 'Python', 'Typescript', 'JavaScript', 'HTML', 'CSS']
   },
   {
     category: 'General',
