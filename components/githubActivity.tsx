@@ -46,7 +46,6 @@ const GitHubActivity = () => {
           }
         })
       )
-
       // Sort all fetched commits by date and limit to 6 globally
       const sorted = fetched
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
