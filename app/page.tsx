@@ -81,20 +81,17 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-800 dark:text-zinc-400">
-          I build solutions that make a difference. As a software engineer, I specialize in designing scalable, high-performance applications that solve real-world challenges. 
-          With expertise in Java, Python, and C++, I’ve worked on everything from AI-powered automation to cloud-native systems, always striving to create software that is both efficient and impactful.
+          I build applications that are fast, reliable, and designed to last. 
+          With experience in Java, Python, and C++, I’ve contributed to projects across automation, mobile platforms, and cloud infrastructure. 
+          My work spans from enterprise systems at IBM to internal tooling and customer experiences at Apple.
           <br></br>
           <br></br>
-          My journey has taken me through industry-leading companies like Apple and IBM, where I’ve worked on projects ranging from AI-powered drone systems to cloud-native enterprise applications. 
-          Each experience has reinforced my passion for engineering solutions that are not only efficient but also meaningful.
+          Away from the codebase, I’ve spent 18 years in cricket as both a player and coach. 
+          It’s taught me how to lead under pressure, think strategically, and work as part of a team—skills I rely on just as much in engineering.
           <br></br>
           <br></br>
-          Beyond the world of software, I’ve spent 18 years immersed in cricket, both as a player and coach. 
-          Teaching the sport has shaped my leadership style—emphasizing strategy, discipline, and teamwork—principles I carry into my work as an engineer.
-          <br></br>
-          <br></br>
-          At my core, I’m passionate about continuous learning, innovation, and using technology to solve real-world problems. 
-          Whether optimizing complex systems or mentoring the next generation of engineers, I’m always striving to build, improve, and inspire.
+          Right now, I’m focused on writing clean code, growing as a developer, and building products that people can trust. 
+          I’m always looking for opportunities where I can learn fast, ship value, and collaborate with others who care about the work.
           </p>
         </div>
       </motion.section>
