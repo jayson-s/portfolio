@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import { Spotlight } from '@/ui/spotlight'
 import { Magnetic } from '@/ui/magnetic'
+import GitHubActivity from '@/components/githubActivity'
 
 import {
   SKILLS,
@@ -145,6 +146,11 @@ export default function Personal() {
               </div>
             </div>
           ))}
+        </div>
+        <br></br>
+        <br></br>
+        <div>
+          <GitHubActivity />
         </div>
       </motion.section>
 
