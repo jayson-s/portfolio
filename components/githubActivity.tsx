@@ -14,7 +14,6 @@ const REPOS = [
   'jayson-s/portfolio',
   'jayson-s/Jayson-s',
   'jayson-s/flavour_pages',
-  'jayson-s/lifebalance-new',
   'jayson-s/LifeBalancePlus',
 ]
 
@@ -23,27 +22,37 @@ const GitHubActivity = () => {
 
   useEffect(() => {
     const fetchCommits = async () => {
-        const fetched = await Promise.all(
-            REPOS.map(async (repo): Promise<CommitData | null> => {
-              try {
-                const res = await fetch(`https://api.github.com/repos/${repo}/commits`)
-                const data = await res.json()
-                const latest = data[0]
-                return {
-                  repo,
-                  message: latest.commit.message,
-                  url: latest.html_url,
-                  date: latest.commit.author.date,
-                }
-              } catch (error) {
-                console.error(`Failed to fetch commits for ${repo}`, error)
-                return null
-              }
+      const fetched: CommitData[] = []
+
+      await Promise.all(
+        REPOS.map(async (repo) => {
+          try {
+            const res = await fetch(`https://api.github.com/repos/${repo}/commits`)
+            const data = await res.json()
+
+            if (!data || !Array.isArray(data)) return
+
+            // Limit to 3 commits per repo
+            data.slice(0, 3).forEach((commit: any) => {
+              fetched.push({
+                repo,
+                message: commit.commit.message,
+                url: commit.html_url,
+                date: commit.commit.author.date,
+              })
             })
-          )
-          
-          const results: CommitData[] = fetched.filter((item): item is CommitData => item !== null)
-          setCommits(results)
+          } catch (error) {
+            console.error(`Failed to fetch commits for ${repo}`, error)
+          }
+        })
+      )
+
+      // Sort all fetched commits by date and limit to 6 globally
+      const sorted = fetched
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .slice(0, 6)
+
+      setCommits(sorted)
     }
 
     fetchCommits()
