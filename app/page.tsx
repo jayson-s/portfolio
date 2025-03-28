@@ -70,7 +70,7 @@ function MagneticSocialLink({
 export default function Personal() {
   return (
     <motion.main
-      className="space-y-15"
+      className="space-y-10"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
@@ -81,17 +81,19 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-800 dark:text-zinc-400">
-          I build applications that are fast, reliable, and designed to last. 
+          I build applications that are reliable, efficient, and designed to last. 
           With experience in Java, Python, and C++, I’ve contributed to projects across automation, mobile platforms, and cloud infrastructure. 
           My work spans from enterprise systems at IBM to internal tooling and customer experiences at Apple.
           <br></br>
           <br></br>
-          Away from the codebase, I’ve spent 18 years in cricket as both a player and coach. 
-          It’s taught me how to lead under pressure, think strategically, and work as part of a team—skills I rely on just as much in engineering.
+          Away from the codebase, I’ve spent 18 years in competitive cricket as both a player and mentor. 
+          That experience has taught me how to lead under pressure, discipline, and patience-skills I carry into every engineering team.
+          It also strengthened my ability to collaborate with others, stay composed in high-stakes situations, and support those around me through challenges. 
           <br></br>
           <br></br>
           Right now, I’m focused on writing clean code, growing as a developer, and building products that people can trust. 
-          I’m always looking for opportunities where I can learn fast, ship value, and collaborate with others who care about the work.
+          I’m always looking for opportunities where I can keep learning, contribute meaningfully, and build software that’s both robust and useful. 
+          Whether it’s improving performance, refining abstractions, or mentoring teammates, I’m here to add value.
           </p>
         </div>
       </motion.section>
