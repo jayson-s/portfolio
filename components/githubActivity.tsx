@@ -54,7 +54,6 @@ const GitHubActivity = () => {
 
       setCommits(sorted)
     }
-
     fetchCommits()
   }, [])
 
