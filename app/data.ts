@@ -141,7 +141,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     id: 'work1',
   },
   {
-    company: 'IBM',
+    company: 'IBM Developer Program',
     title: 'Software Developer',
     start: 'May 2019',
     end: 'Dec 2019',
