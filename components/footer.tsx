@@ -69,7 +69,7 @@ export function Footer() {
           rel="noopener noreferrer author"
         >
           <TextLoop className="text-xs text-zinc-500">
-            <span>© 2025 - Jayson Sandhu</span>
+            <span>© 2026 - Jayson Sandhu</span>
             <span>Built with Next.js</span>
           </TextLoop>
         </a>

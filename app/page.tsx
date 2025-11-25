@@ -81,19 +81,36 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-800 dark:text-zinc-400">
-          I build applications that are reliable, efficient, and designed to last. 
-          With experience in Java, Python, and C++, I’ve contributed to projects across automation, mobile platforms, and cloud infrastructure. 
-          My work spans from enterprise systems at IBM to internal tooling and customer experiences at Apple.
-          <br></br>
-          <br></br>
-          Away from the codebase, I’ve spent 18 years in competitive cricket as both a player and mentor. 
-          That experience has taught me how to lead under pressure, discipline, and patience-skills I carry into every engineering team.
-          It also strengthened my ability to collaborate with others, stay composed in high-stakes situations, and support those around me through challenges. 
-          <br></br>
-          <br></br>
-          Right now, I’m focused on writing clean code, growing as a developer, and building products that people can trust. 
-          I’m always looking for opportunities where I can keep learning, contribute meaningfully, and build software that’s both robust and useful. 
-          Whether it’s improving performance, refining abstractions, or mentoring teammates, I’m here to add value.
+            I am a Product Support Engineer at Meltwater, specializing in
+            incident resolution, platform stability, and technical problem
+            solving across an enterprise SaaS environment. My work focuses on
+            diagnosing complex user, data, and API issues while partnering
+            closely with Product and Engineering to drive clear, accurate
+            resolutions for global clients.
+            <br></br>
+            <br></br>
+            My technical background includes Python, SQL, automation, and
+            foundational cloud architecture, supported by my AWS Solutions
+            Architect certification. I have experience improving support
+            workflows, reducing friction in technical operations, and
+            strengthening root cause analysis to prevent recurring issues and
+            enhance system reliability.
+            <br></br>
+            <br></br>
+            Before Meltwater, I developed a strong diagnostic foundation through
+            hands on technical operations at Apple and participated in a
+            competitive IBM Developer program focused on AI and automation. At
+            IBM, I built computer vision driven drone features and lightweight
+            ML workflows using Python and IBM Cloud, which deepened my interest
+            in dependable software systems.
+            <br></br>
+            <br></br>
+            Outside of work, I bring 18 years of competitive cricket experience
+            as both a player and mentor. That background taught me discipline,
+            composure under pressure, and how to support teams in fast paced
+            environments. I am focused on growing within support engineering,
+            expanding my automation skill set, and building toward future roles
+            in solutions engineering and platform reliability.
           </p>
         </div>
       </motion.section>
@@ -105,14 +122,14 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">Skills</h3>
         {SKILLS.map((skillCategory) => (
           <div key={skillCategory.category} className="mb-6">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-800 dark:text-zinc-300">
+            <h3 className="text-sm font-semibold tracking-wide text-zinc-800 uppercase dark:text-zinc-300">
               {skillCategory.category}
             </h3>
             <div className="mt-2 flex flex-wrap gap-2">
               {skillCategory.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-4 py-1.5 rounded-lg text-sm font-medium bg-white text-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-800 transition-all duration-200 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+                  className="rounded-lg border border-zinc-300 bg-white px-4 py-1.5 text-sm font-medium text-zinc-800 transition-all duration-200 hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
                 >
                   {skill}
                 </span>
@@ -137,7 +154,7 @@ export default function Personal() {
                   target="_blank"
                 >
                   {project.name}
-                  <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
+                  <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 transition-all duration-200 group-hover:max-w-full dark:bg-zinc-50"></span>
                 </a>
                 <p className="text-base text-zinc-500 dark:text-zinc-400">
                   {project.description}

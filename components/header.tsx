@@ -16,7 +16,7 @@ export function Header() {
           className="text-zinc-500 dark:text-zinc-400"
           //delay={0.5}
         >
-          Software Engineer
+          Support Engineer
         </TextEffect>
       </div>
     </header>

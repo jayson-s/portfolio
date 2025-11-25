@@ -85,6 +85,7 @@ export const SKILLS: SkillCategory[] = [
     category: 'Tools',
     skills: [
       'AWS',
+      'Confluence',
       'Docker',
       'GitHub',
       'IntelliJ IDEA',
@@ -92,8 +93,9 @@ export const SKILLS: SkillCategory[] = [
       'Jira',
       'Linux',
       'MongoDB',
-      'PostgreSQL',
       'MySQL',
+      'PostgreSQL',
+      'Salesforce',
       'VS Code',
     ],
   },
@@ -134,25 +136,32 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Apple',
-    title: 'Technical Expert',
-    start: 'Aug 2021',
+    company: 'Meltwater',
+    title: 'Product Support Engineer',
+    start: 'Aug 2025',
     end: 'Present',
     id: 'work1',
+  },
+  {
+    company: 'Apple',
+    title: 'L3 Support Expert',
+    start: 'Aug 2021',
+    end: 'Present',
+    id: 'work2',
   },
   {
     company: 'IBM Developer Program',
     title: 'Software Developer',
     start: 'May 2019',
     end: 'Dec 2019',
-    id: 'work2',
+    id: 'work3',
   },
   {
     company: 'Shoppers Drug Mart',
     title: 'Assistant Store Manager',
     start: 'Jul 2017',
     end: 'Aug 2022',
-    id: 'work3',
+    id: 'work4',
   },
 ]
 
@@ -167,10 +176,16 @@ export const EDUCATION_: Education[] = [
 
 export const CERTIFICATE: Certification[] = [
   {
+    company: 'Meltwater',
+    name: 'Meltwater Platform Support Certification',
+    date: 'Aug 2025',
+    id: 'cert1',
+  },
+  {
     company: 'Amazon Web Services',
     name: 'AWS Cloud Solutions Architect - Associate',
     date: 'Feb 2025',
-    id: 'cert1',
+    id: 'cert2',
   },
 ]
 
