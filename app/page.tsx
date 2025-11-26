@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import portfolioPic from '@/public/portfolio-pic.png'
 import { motion } from 'framer-motion'
 import { Spotlight } from '@/ui/spotlight'
 import { Magnetic } from '@/ui/magnetic'
@@ -115,9 +116,11 @@ export default function Personal() {
           <div className="flex w-full justify-center md:w-auto md:justify-end">
             <div className="relative h-64 w-64 md:h-115 md:w-90">
               <Image
-                src="/portfolio-pic.png"
+                src={portfolioPic}
                 alt="Portrait of Jayson Sandhu"
                 fill
+                priority
+                placeholder="blur"
                 className="rounded-4xl border border-zinc-200 object-cover shadow-lg dark:border-zinc-700"
                 sizes="(min-width: 768px) 20rem, 16rem"
               />
