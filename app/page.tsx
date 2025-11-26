@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Spotlight } from '@/ui/spotlight'
 import { Magnetic } from '@/ui/magnetic'
@@ -79,39 +80,49 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <div className="flex-1">
-          <p className="text-zinc-800 dark:text-zinc-400">
-            I am a Product Support Engineer at Meltwater, specializing in
-            incident resolution, platform stability, and technical problem
-            solving across an enterprise SaaS environment. My work focuses on
-            diagnosing complex user, data, and API issues while partnering
-            closely with Product and Engineering to drive clear, accurate
-            resolutions for global clients.
-            <br></br>
-            <br></br>
-            My technical background includes Python, SQL, automation, and
-            foundational cloud architecture, supported by my AWS Solutions
-            Architect certification. I have experience improving support
-            workflows, reducing friction in technical operations, and
-            strengthening root cause analysis to prevent recurring issues and
-            enhance system reliability.
-            <br></br>
-            <br></br>
-            Before Meltwater, I developed a strong diagnostic foundation through
-            hands on technical operations at Apple and participated in a
-            competitive IBM Developer program focused on AI and automation. At
-            IBM, I built computer vision driven drone features and lightweight
-            ML workflows using Python and IBM Cloud, which deepened my interest
-            in dependable software systems.
-            <br></br>
-            <br></br>
-            Outside of work, I bring 18 years of competitive cricket experience
-            as both a player and mentor. That background taught me discipline,
-            composure under pressure, and how to support teams in fast paced
-            environments. I am focused on growing within support engineering,
-            expanding my automation skill set, and building toward future roles
-            in solutions engineering and platform reliability.
-          </p>
+        <div className="flex flex-col items-start gap-10 md:flex-row">
+          <div className="flex-1">
+            <p className="text-zinc-800 dark:text-zinc-400">
+              I am a Product Support Engineer at Meltwater, specializing in
+              incident resolution, platform stability, and technical problem
+              solving across an enterprise SaaS environment. I focus on
+              diagnosing user, data, and API issues while partnering with
+              Product and Engineering to deliver clear, accurate resolutions
+              that improve the overall client experience.
+              <br />
+              <br />
+              My technical background includes Python, SQL, automation, and
+              foundational cloud architecture, supported by my AWS Solutions
+              Architect certification. I have experience improving support
+              workflows, strengthening root cause analysis, and reducing
+              operational friction to help prevent recurring issues. Before
+              Meltwater, I developed a strong diagnostic foundation at Apple and
+              completed a competitive IBM Developer program focused on AI and
+              automation, where I built computer vision features and lightweight
+              ML workflows using Python and IBM Cloud.
+              <br />
+              <br />
+              Outside of work, I bring 18 years of competitive cricket
+              experience as both a player and mentor, which shaped my
+              discipline, composure under pressure, and ability to support teams
+              in fast moving environments. I am focused on growing within
+              support engineering, expanding my automation skill set, and
+              building toward future roles in solutions engineering and platform
+              reliability.
+            </p>
+          </div>
+
+          <div className="flex w-full justify-center md:w-auto md:justify-end">
+            <div className="relative h-64 w-64 md:h-115 md:w-90">
+              <Image
+                src="/portfolio-pic.png"
+                alt="Portrait of Jayson Sandhu"
+                fill
+                className="rounded-4xl border border-zinc-200 object-cover shadow-lg dark:border-zinc-700"
+                sizes="(min-width: 768px) 20rem, 16rem"
+              />
+            </div>
+          </div>
         </div>
       </motion.section>
 

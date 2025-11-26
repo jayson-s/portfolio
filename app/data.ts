@@ -39,64 +39,74 @@ type SocialLink = {
 
 export const SKILLS: SkillCategory[] = [
   {
-    category: 'Languages',
-    skills: ['Java', 'C++', 'Python', 'Typescript', 'JavaScript', 'HTML', 'CSS']
-  },
-  {
-    category: 'General',
+    category: 'Languages & Scripting',
     skills: [
-      'Adaptability',
-      'Collaboration',
-      'Communication',
-      'Critical Thinking',
-      'Leadership',
-      'Problem Solving',
-      'Time Management',
+      'Python',
+      'SQL',
+      'Java',
+      'C++',
+      'TypeScript',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'Bash',
     ],
   },
   {
     category: 'Technical',
     skills: [
-      'CI/CD Pipelines',
-      'Cloud Computing',
-      'Database Management',
+      'SaaS & Application Support',
+      'API Debugging',
+      'Incident Analysis',
+      'Root-Cause Investigation',
       'Data Structures & Algorithms',
-      'System Design',
-      'Object-Oriented Programming (OOP)',
-      'Software Architecture',
-      'Test-Driven Development (TDD)',
+      'Object-Oriented Programming',
+      'System Design Fundamentals',
+      'Test-Driven Development',
       'Version Control (Git)',
     ],
   },
   {
-    category: 'Frameworks',
+    category: 'Cloud & Infrastructure',
     skills: [
-      'Express.js',
-      'Firebase',
-      'Flutter',
-      'Next.js',
-      'Node.js', 
-      'React.js',
-      'Spring Boot',
-      'Tailwind CSS',
+      'AWS EC2',
+      'AWS S3',
+      'AWS DynamoDB',
+      'AWS Lambda',
+      'Docker',
+      'CI/CD (GitHub Actions, Jenkins)',
+      'Linux',
     ],
   },
   {
-    category: 'Tools',
+    category: 'Frameworks & Platforms',
+    skills: ['Next.js', 'React.js', 'Node.js', 'Firebase', 'Tailwind CSS'],
+  },
+  {
+    category: 'Tools & Systems',
     skills: [
-      'AWS',
-      'Confluence',
-      'Docker',
-      'GitHub',
-      'IntelliJ IDEA',
-      'Jenkins',
       'Jira',
-      'Linux',
-      'MongoDB',
-      'MySQL',
-      'PostgreSQL',
+      'Confluence',
       'Salesforce',
+      'Postman',
+      'GitHub',
       'VS Code',
+      'MongoDB',
+      'PostgreSQL',
+      'MySQL',
+      'IntelliJ IDEA',
+    ],
+  },
+  {
+    category: 'Core Competencies',
+    skills: [
+      'Collaboration',
+      'Communication',
+      'Critical Thinking',
+      'Adaptability',
+      'Leadership',
+      'Problem Solving',
+      'Time Management',
     ],
   },
 ]
@@ -104,31 +114,36 @@ export const SKILLS: SkillCategory[] = [
 export const PROJECTS: Project[] = [
   {
     name: 'Personal Portfolio',
-    description: 'My legacy personal website built with HTML, CSS, & JavaScript before shifting to a modern Next.js based version.',
+    description:
+      'My legacy personal website built with HTML, CSS, & JavaScript before shifting to a modern Next.js based version.',
     link: 'https://jayson-s.github.io/',
     id: 'project1',
   },
   {
     name: 'Othello',
-    description: 'An AI-powered Othello game built with Java and Minimax Algorithm, designed for competitive strategic gameplay.',
+    description:
+      'An AI-powered Othello game built with Java and Minimax Algorithm, designed for competitive strategic gameplay.',
     link: 'https://github.com/jayson-s/othello',
     id: 'project2',
   },
   {
     name: 'LifeBalance+',
-    description: 'A cross-platform wellness app built with Flutter, offering task management, habit tracking, and fitness analytics.',
+    description:
+      'A cross-platform wellness app built with Flutter, offering task management, habit tracking, and fitness analytics.',
     link: 'https://github.com/jayson-s/LifeBalancePlus',
     id: 'project3',
   },
   {
     name: 'Banking System',
-    description: 'A scalable C++ banking system designed for secure account management, transactions, and financial data integrity.',
+    description:
+      'A scalable C++ banking system designed for secure account management, transactions, and financial data integrity.',
     link: 'https://github.com/jayson-s/Banking-System',
     id: 'project4',
   },
   {
     name: 'Real Estate Prediction Model',
-    description: 'A scalable housing data system designed for robust EDA, efficient feature engineering, and accurate price modeling.',
+    description:
+      'A scalable housing data system designed for robust EDA, efficient feature engineering, and accurate price modeling.',
     link: 'https://github.com/jayson-s/RealEstatePrediction',
     id: 'project5',
   },
@@ -200,6 +215,6 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ]
 
-type Email = `${string}@${string}.${string}`;
+type Email = `${string}@${string}.${string}`
 
-export const EMAIL: Email = 'jayson@jaysonsandhu.com';
+export const EMAIL: Email = 'jayson@jaysonsandhu.com'
