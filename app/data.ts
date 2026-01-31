@@ -74,6 +74,7 @@ export const SKILLS: SkillCategory[] = [
       'AWS DynamoDB',
       'AWS Lambda',
       'Docker',
+      'Kubernetes',
       'CI/CD (GitHub Actions, Jenkins)',
       'Linux',
     ],
@@ -159,9 +160,9 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     company: 'Apple',
-    title: 'L3 Support Expert',
+    title: 'Senior Technical Expert',
     start: 'Aug 2021',
-    end: 'Present',
+    end: 'Feb 2026',
     id: 'work2',
   },
   {
@@ -191,9 +192,9 @@ export const EDUCATION_: Education[] = [
 
 export const CERTIFICATE: Certification[] = [
   {
-    company: 'Meltwater',
-    name: 'Meltwater Platform Support Certification',
-    date: 'Aug 2025',
+    company: 'Pearson',
+    name: 'Certified Kubernetes Application Developer',
+    date: 'Jan 2026',
     id: 'cert1',
   },
   {
